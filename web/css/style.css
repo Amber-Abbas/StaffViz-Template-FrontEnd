@@ -2,25 +2,13 @@
 .container {
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
-
 .n-m-i {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  gap: 60px;
 }
-
 .network,
 .mapping,
 .innovating {
-  text-align: center; /* Center text within each block */
-  width: 379px;
-  height: 144px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  padding: 10px;
   gap: 5px;
 }
 .network {
@@ -42,7 +30,7 @@
   justify-content: center;
 
   font-family: Archivo;
-  font-size: 45px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 48.96px;
 
@@ -50,20 +38,13 @@
 }
 
 .map-txt,
-.net-text,
-.ino-text {
-  width: 222px;
-  height: 44px;
-  top: 80px;
-  left: 78.5px;
-  gap: 0px;
-  opacity: 0px;
+.net-txt,
+.ino-txt {
   color: #273454;
   font-family: Inter;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 21.78px;
-  text-align: center;
 }
 
 .swiper {
@@ -80,7 +61,6 @@
   height: auto; /* Adjust height based on content */
   padding: 20px; /* Add padding to avoid content sticking to edges */
   box-sizing: border-box; /* Include padding in width/height calculations */
-  padding: 5%;
 }
 
 .swiper-slide img {
@@ -326,7 +306,7 @@
 /* track-shift-end */
 
 /* Base styles for text-4 */
-.text-4 {
+.get-a-pass {
   font-family: Montserrat;
   font-size: 45px;
   font-weight: 700;
@@ -347,7 +327,7 @@
   /* Default font size */
 }
 
-.text-5 {
+.schedule {
   height: 200px;
   top: 1189px;
   left: 953px;
@@ -360,7 +340,7 @@
   align-items: left;
 }
 
-.text-5 .button-3 {
+.sched-btn {
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
@@ -408,7 +388,6 @@
   justify-content: center;
   align-items: center;
   background-color: #273454;
-
   margin: 0 auto;
 }
 
@@ -419,7 +398,8 @@
   line-height: 30.48px;
   color: #ffffff;
   text-decoration: none;
-  border-radius: ;
+
+  width: 1494.3px;
 }
 
 .meet-staffviz {
@@ -454,10 +434,61 @@
   align-items: center;
   text-align: center;
 }
+/* <!-- lets meet container start --> */
+.footer-img {
+  background-image: url("../images/foot-image.png"); /* Ensure this path is correct */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+}
 
+.participate {
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 42.67px;
+
+  color: #000000;
+}
+.let-meet {
+  font-family: Montserrat;
+  font-size: 70px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 122px;
+  color: #273454;
+  background-color: #daff47;
+  width: fit-content;
+  text-decoration: underline #273454;
+  padding: 20px;
+  width: 831px;
+  height: 140px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  opacity: 0px;
+}
+.itcn-pic {
+  background-color: ;
+}
+
+.footer {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+}
+.footer span {
+  color: #0559ba;
+}
+
+/* <!-- lets meet container start --> */
 /* MEDIA QUERIES */
 /* X-Small Screens (phones, ≥ 576px) */
 @media (max-width: 575.98px) {
+  .offcanvas .navbar-nav .nav-item:after {
+    content: none;
+  }
   .text-5 {
     font-size: 9px;
   }
@@ -467,6 +498,9 @@
   .itcn-first-text .itcn {
     font-size: 18px;
   }
+  .get-a-pass {
+    font-size: 25px;
+  }
   .openDoor-power .open {
     font-size: 20px;
   }
@@ -475,6 +509,12 @@
   }
   .text-4 {
     font-size: 30px;
+  }
+  .why-staffviz {
+    width: 200px;
+  }
+  .staffviz-btn {
+    font-size: 20px;
   }
   .meet-staffviz .m-s-heading {
     font-size: 25px;
@@ -487,16 +527,30 @@
   }
   .shift-track .shift {
     font-size: 16px;
+  }
+  .participate {
+    font-size: 26px;
+  }
+  .let-meet {
+    font-size: 40px;
+    width: 400px;
+    height: 140px;
   }
 }
 
 /* Small Screens (phones, ≥ 576px) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .offcanvas .navbar-nav .nav-item:after {
+    content: none;
+  }
   .itcn-first-text .itcn {
     font-size: 18px;
   }
   .itcn-first-text.firsthand {
     font-size: 18px;
+  }
+  .get-a-pass {
+    font-size: 30px;
   }
   .openDoor-power .open {
     font-size: 25px;
@@ -507,6 +561,12 @@
   .text-4 {
     font-size: 30px;
   }
+  .why-staffviz {
+    width: 200px;
+  }
+  .staffviz-btn {
+    font-size: 20px;
+  }
   .meet-staffviz .m-s-heading {
     font-size: 30px;
   }
@@ -519,15 +579,29 @@
   .shift-track .shift {
     font-size: 18px;
   }
+  .participate {
+    font-size: 28px;
+  }
+  .let-meet {
+    font-size: 50px;
+    width: 500px;
+    height: 140px;
+  }
 }
 
 /* Medium Screens (tablets, ≥ 768px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .offcanvas .navbar-nav .nav-item:after {
+    content: none;
+  }
   .itcn-first-text .itcn {
     font-size: 23px;
   }
   .itcn-first-text.firsthand {
     font-size: 23px;
+  }
+  .get-a-pass {
+    font-size: 35px;
   }
   .openDoor-power .open {
     font-size: 30px;
@@ -535,9 +609,13 @@
   .openDoor-power .power {
     font-size: 20px;
   }
-  .text-4 {
-    font-size: 40px;
+  .why-staffviz {
+    width: 200px;
   }
+  .staffviz-btn {
+    font-size: 20px;
+  }
+
   .meet-staffviz .m-s-heading {
     font-size: 35px;
   }
@@ -549,6 +627,14 @@
   }
   .shift-track .shift {
     font-size: 20px;
+  }
+  .participate {
+    font-size: 32px;
+  }
+  .let-meet {
+    font-size: 60px;
+    width: 700px;
+    height: 140px;
   }
 }
 
@@ -560,13 +646,19 @@
   .itcn-first-text.firsthand {
     font-size: 25px;
   }
-  .text-4 {
-    font-size: 50px;
+  .get-a-pass {
+    font-size: 40px;
   }
   .openDoor-power .open {
     font-size: 40px;
   }
   .openDoor-power .power {
+    font-size: 22px;
+  }
+  .why-staffviz {
+    width: 220px;
+  }
+  .staffviz-btn {
     font-size: 22px;
   }
   .meet-staffviz .m-s-heading {
@@ -580,6 +672,14 @@
   }
   .shift-track .shift {
     font-size: 22px;
+  }
+  .participate {
+    font-size: 35px;
+  }
+  .let-meet {
+    font-size: 70px;
+    width: 831px;
+    height: 140px;
   }
 }
 
@@ -591,14 +691,21 @@
   .itcn-first-text .firsthand {
     font-size: 25px;
   }
-  .text-4 {
-    font-size: 50px;
+  .get-a-pass {
+    font-size: 45px;
   }
   .openDoor-power .open {
     font-size: 40px;
   }
   .openDoor-power .power {
     font-size: 22px;
+  }
+  .staffviz-btn {
+    font-size: 25px;
+  }
+
+  .staffviz-btn {
+    font-size: 25px;
   }
   .meet-staffviz .m-s-heading {
     font-size: 45px;
@@ -612,4 +719,14 @@
   .shift-track .shift {
     font-size: 22px;
   }
+  .participate {
+    font-size: 35px;
+  }
+  .let-meet {
+    font-size: 70px;
+    width: 831px;
+    height: 140px;
+  }
 }
+width: 831px;
+height: 140px;
