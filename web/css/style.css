@@ -2,9 +2,7 @@
 .container {
   overflow-x: hidden; /* Prevent horizontal overflow */
 }
-.n-m-i {
-  gap: 60px;
-}
+
 .network,
 .mapping,
 .innovating {
@@ -151,15 +149,17 @@
 }
 
 .offcanvas-header {
-  background-color: #0e1c42;
+  background-color: #f2f3f6;
 }
 .offcanvas-title {
-  color: #ffffff;
+  color: #0e1c42;
 }
-
+.custom-btn-close {
+  color: #ffffff !important; /* Change to your desired color */
+}
 /* Background color when offcanvas is visible */
 .offcanvas.show .offcanvas-body {
-  background-color: #0074bc;
+  background-color: #19618d;
 }
 .itcn-first-text {
   margin-top: 70px;
