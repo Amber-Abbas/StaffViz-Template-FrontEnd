@@ -518,8 +518,36 @@
 
 /* <!-- lets meet container start --> */
 /* MEDIA QUERIES */
+@media (max-width: 360px) {
+  .get-a-pass {
+    font-size: 20px;
+  }
+  .shift-track .track {
+    font-size: 20px;
+  }
+  .shift-track .shift {
+    font-size: 11px;
+  }
+  .box-img {
+    display: none;
+  }
+  .box-txt-pic .box-txt-1 {
+    text-align: left;
+  }
+  .why-staffviz {
+    width: 150px;
+  }
+  .staffviz-btn {
+    font-size: 13px;
+  }
+  .let-meet {
+    font-size: 30px;
+    width: 300px;
+    height: 125px;
+  }
+}
 /* X-Small Screens (phones, ≥ 576px) */
-@media (max-width: 575.98px) {
+@media (min-width: 360px) and (max-width: 740px) {
   .offcanvas .navbar-nav .nav-item:after {
     content: none;
   }
@@ -540,7 +568,7 @@
     font-size: 18px;
   }
   .get-a-pass {
-    font-size: 25px;
+    font-size: 23px;
   }
   .openDoor-power .open {
     font-size: 20px;
@@ -580,7 +608,7 @@
 }
 
 /* Small Screens (phones, ≥ 576px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 741px) and (max-width: 767.98px) {
   .offcanvas .navbar-nav .nav-item:after {
     content: none;
   }

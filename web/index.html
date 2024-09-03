@@ -98,8 +98,7 @@
       </div>
       <!-- hero section text end -->
 
-      <!-- MODEL REGISTRATION FORM START  -->
-
+      <!-- MODEL REGISTRATION FORM START -->
       <div
         class="modal fade"
         id="registerModal"
@@ -125,49 +124,51 @@
                 id="registrationForm"
                 name="myForm"
                 action="/"
-                onsubmit="validateForm(event)"
+                onsubmit="return validateForm(event)"
                 method="post"
               >
-                <div class="mb-3" id="name">
+                <div class="mb-3" id="nameInput">
                   <label for="name" class="form-label">Name</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="nameInput"
+                    id="name"
                     name="name"
                     placeholder="Enter your name"
                   />
                   <span class="form-error"></span>
                 </div>
-                <div class="mb-3" id="email">
+                <div class="mb-3" id="email-box">
                   <label for="email" class="form-label">Email address</label>
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="email"
+                    name="email"
                     placeholder="Enter your email"
                   />
                   <span class="form-error"></span>
                 </div>
-                <div class="mb-3" id="password">
+                <div class="mb-3" id="password-box">
                   <label for="password" class="form-label">Password</label>
                   <input
                     type="password"
                     class="form-control"
                     id="password"
+                    name="password"
                     placeholder="Enter your password"
                   />
                   <span class="form-error"></span>
                 </div>
-                <div class="mb-3" id="confirm-password">
+                <div class="mb-3" id="confirm-password-box">
                   <label for="confirmPassword" class="form-label"
                     >Confirm Password</label
                   >
-
                   <input
                     type="password"
                     class="form-control"
                     id="confirmPassword"
+                    name="confirmPassword"
                     placeholder="Confirm your password"
                   />
                   <span class="form-error"></span>
@@ -187,7 +188,8 @@
           </div>
         </div>
       </div>
-      <!-- MODEL REGISTRATION FORM END  -->
+      <!-- MODEL REGISTRATION FORM END -->
+
       <!-- hero-button-start -->
 
       <div class="container">
@@ -571,6 +573,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="js/script.js"></script>
   </body>
 </html>
